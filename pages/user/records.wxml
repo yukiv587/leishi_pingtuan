@@ -1,0 +1,32 @@
+<!--pages/user/records.wxml-->
+
+<view class='record-page'>
+  <view class='main'>
+
+    <view class='list-item' wx:for="{{userGroupInfo.orders}}">
+      <view class='top'>
+        <view class='money'>充值金额：
+          <text class='col-red'>￥{{item.amount}}</text>
+        </view>
+        <view class='status'>状态：
+          <text wx:if="{{item.state==1}}"class='col-red'>待审核</text>
+          <text wx:if="{{item.state==2}}" >已完成</text>
+          <text wx:if="{{item.state==3}}" >已拒绝</text>
+        </view>
+      </view>
+      <view class='middle'>
+        <view class='sn'>团编号：{{item.groupsn}}</view>
+        <view class='date'>{{item.addtime}}</view>
+      </view>
+      <view class='bottom'>
+        <text wx:if="{{item.paytype==0}}">支付方式：微信支付</text>
+        <text wx:if="{{item.paytype==1}}">支付方式：线下支付，上传支付凭证</text>
+      </view>
+    </view>
+
+    <view class="empty" wx:if="{{userGroupInfo.orders.length == 0}}">
+      <text>暂无数据</text>
+    </view>
+
+  </view>
+</view>

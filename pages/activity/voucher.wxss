@@ -1,0 +1,41 @@
+/* pages/activity/voucher.wxss */
+
+.content {
+  background: #fff;
+  text-align: center;
+  padding-top: 120rpx;
+  font-size: 32rpx;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5e5e5e;
+}
+
+.title icon {
+  color: #ff6565;
+  margin-right: 12rpx;
+}
+
+.desc {
+  margin-top: 60rpx;
+  color: #5e5e5e;
+}
+
+.timer {
+  display: inline-block;
+  margin: 100rpx 0;
+  color: #b5b5b5;
+}
+
+.btn-area {
+  padding: 80rpx 40rpx;
+}
+
+.btn-area button{
+  color: #fff;
+  background-color: #1aad19;
+  font-size: 36rpx;
+}

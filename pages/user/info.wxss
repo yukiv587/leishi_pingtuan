@@ -1,0 +1,97 @@
+/* pages/user/info.wxss */
+
+.info-page {
+  padding-top: 30rpx;
+}
+
+.info-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 210rpx;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30rpx;
+}
+
+.userinfo-avatar {
+  width: 166rpx;
+  height: 166rpx;
+  border-radius: 50%;
+}
+
+.info-item-box {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20rpx;
+}
+
+.info-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-size: 32rpx;
+  height: 96rpx;
+  color: #4d4d4d;
+}
+
+.info-item::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+  height: 1px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.info-item:first-child::after {
+  border-top: none;
+}
+
+.item-title {
+  padding-left: 40rpx;
+  display: block;
+  width: 180rpx;
+  height: 1.4rem;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  min-height: 1.4rem;
+  line-height: 1.4rem;
+}
+
+.info-item input {
+  flex: 1;
+}
+
+.required-tip {
+  padding: 0 40rpx;
+  font-size: 28rpx;
+}
+
+.service-tel, .remark {
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+}
+
+.service-tel text {
+  color: #ff6565;
+}
+
+.btn-area {
+  margin-top: 100rpx;
+  margin: 100rpx 50rpx 20rpx;
+}
+
+.btn-area button {
+  font-size: 36rpx;
+  background-color: #1aad19;
+  color: #fff;
+}
+
+.button-hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,47 @@
+/* pages/activity/bonus-reward.wxss */
+
+.page {
+  padding: 20rpx;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 50rpx 0;
+  display: none;
+}
+
+.list-item {
+  text-align: center;
+  margin-bottom: 40rpx;
+  padding: 0 30rpx;
+}
+
+.list-item view {
+  font-size: 36rpx;
+  color: #ff6565;
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+}
+
+.list-item text {
+  display: block;
+  font-size: 32rpx;
+  color: #4d4d4d;
+}
+
+.goback-btn {
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #45ad79;
+  margin-top: 20rpx;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.img-box image {
+  width: 100%;
+  height: auto;
+}

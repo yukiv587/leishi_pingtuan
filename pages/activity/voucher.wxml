@@ -1,0 +1,19 @@
+<!--pages/activity/voucher.wxml-->
+<!-- 确认凭证  -->
+
+<view class="voucher-page">
+
+  <view class='content'>
+    <view class='title'>
+      <icon type="success" size="20" color="#ff6565"/>支付凭证已提交
+    </view>
+
+    <view class='desc'>请等待审核，大概10分钟左右</view>
+
+    <text class='timer'>{{time}}秒后自动跳转</text>
+  </view>
+
+  <view class='btn-area'>
+    <button bindtap='gobackDetail'>返回</button>
+  </view>
+</view>

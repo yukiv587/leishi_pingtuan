@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activity/create",
+    "pages/activity/detail",
+    "pages/logs/logs",
+    "pages/user/index",
+    "pages/user/info",
+    "pages/activity/list",
+    "pages/activity/recharge",
+    "pages/activity/voucher",
+    "pages/activity/edit",
+    "pages/activity/target-reward",
+    "pages/activity/bonus-reward",
+    "pages/user/create",
+    "pages/user/participate",
+    "pages/user/records",
+    "pages/activity/pay-success"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#45ad79",
+    "navigationBarTitleText": "拼团活动",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#b5b5b5",
+    "selectedColor": "#45ad79",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye-g.png",
+        "selectedIconPath": "image/shouye-r.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "image/wode-g.png",
+        "selectedIconPath": "image/wode-r.png"
+      }
+    ]
+  }
+}

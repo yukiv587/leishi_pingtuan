@@ -1,0 +1,62 @@
+<!--pages/activity/recharge.wxml-->
+
+<view class='recharge-page'>
+
+  <view class='list-item recharge-num'>
+    <text class="item-title">充值金额</text>
+    <input name="amount" type="digit" placeholder="单笔不能低于2000元" bindblur="getAmount" />
+  </view>
+
+  <text class='choose-type'>选择付款方式</text>
+
+  <radio-group class='payment-list' bindchange="paymentChange">
+    <!-- <label class='payment-item wechat-payment'>
+      <view class='payment-icon'>
+        <image mode="widthFix" src='/image/payment-icon1.png'></image>
+      </view>
+      <view class='payment-info'>
+        <text class='payment-name'>微信支付</text>
+        <text class='payment-desc'>亿万用户的选择，更快更安全</text>
+      </view>
+      <radio value="wechat" checked color="#45ad79" />
+    </label> -->
+
+    <label class='payment-item  in-person-payment'>
+      <view class='payment-icon'>
+        <image mode="widthFix" src='/image/payment-icon2.png'></image>
+      </view>
+      <view class='payment-info'>
+        <text class='payment-name'>线下支付，上传支付凭证</text>
+        <text class='payment-desc'>需要10分钟左右审核，请耐心等待</text>
+      </view>
+      <radio value="person" checked color="#45ad79" />
+    </label>
+  </radio-group>
+
+  <view>
+    <view class='upload-box' hidden="{{isWeChatPay}}" wx:for="{{uploadArrays}}" wx:key="*this">
+      <block wx:if="{{item==''}}">
+        <text class='upload-desc'>点击按钮上传图片附件</text>
+        <view class='upload-btn' hover-class="button-hover" bindtap='uploadImg' data-id='{{index}}'>上传</view>
+      </block>
+      <block wx:else>
+        <text class='upload-desc'>附件{{index}}</text>
+        <view class='remove-btn' hover-class="button-hover" bindtap='removeUpload' data-id='{{index}}'>移除</view>
+      </block>
+    </view>
+  </view>
+
+
+  <view class='add-btn-box' hidden="{{isWeChatPay}}">
+    <button class='add-btn' bindtap="addUpload">添加</button>
+  </view>
+
+  <view class='submit-btn-box'>
+    <view class='tip'>
+      <text hidden="{{!isWeChatPay}}">充值后自动加入团组</text>
+    </view>
+    <button class='payment-btn' hidden="{{!isWeChatPay}}" bindtap='weChatPayment'>确认支付</button>
+    <button class='submit-btn' hidden="{{isWeChatPay}}" bindtap='personPayment'>确认提交</button>
+  </view>
+
+</view>

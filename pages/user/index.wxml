@@ -1,0 +1,45 @@
+<!--pages/user/index.wxml-->
+<view class='page'>
+  <view class="userinfo">
+    <view wx:if="{{!hasUserInfo}}" hover-class="button-hover" class="getUserInfoBtn" bindtap='getUserInfo'>获取头像昵称</view>
+    <block wx:else>
+      <navigator url="/pages/user/info" class="navigator">
+        <view class="navigator-text">
+          <image mode="widthFix" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+        <view class="navigator-arrow"></view>
+      </navigator>
+    </block>
+  </view>
+
+  <view class='info'>
+    <navigator url="/pages/user/create" class="navigator">
+      <view class="navigator-text">
+        <text>我创建的团</text>
+        <text>{{userGroupInfo.myGroup}}</text>
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+  </view>
+
+  <view class='info'>
+    <navigator url="/pages/user/participate" class="navigator">
+      <view class="navigator-text">
+        <text>我参与的团</text>
+        <text>{{userGroupInfo.joinGroup}}</text>
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+  </view>
+
+  <view class='info'>
+    <navigator url="/pages/user/records" class="navigator">
+      <view class="navigator-text">
+        <text>我的充值</text>
+        <text>{{userGroupInfo.totalAmount}}元</text>
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+  </view>
+</view>

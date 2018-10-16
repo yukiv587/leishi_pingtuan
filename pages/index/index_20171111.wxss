@@ -1,0 +1,47 @@
+/* pages/index/index.wxss */
+
+page {
+  background-color: #ff6969;
+}
+
+.img-box image {
+  width: 100%;
+}
+.btn-area-middle {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 30rpx 0;
+}
+.btn-area-middle navigator{
+  color:  #f5f1bb;
+  background-color: transparent;
+  border: 1px solid #f5f1bb;
+  border-radius: 100rpx;
+  line-height: 84rpx;
+  text-align: center;
+  padding: 0 20rpx;
+
+}
+.btn-area {
+   width: 642rpx;
+  padding: 50rpx 0 36rpx;
+  text-align: center;
+  border-top: 1px solid #c03e4d;
+  margin: 0 auto;
+}
+.btn-area image {
+  width: 642rpx;
+}
+
+button {
+  font-size: 40rpx;
+  color: #fff;
+  background-color: #fb8044;
+}
+
+.button-hover {
+  color: #fff;
+  background-color: #fb8044;
+  opacity: 0.8;
+}

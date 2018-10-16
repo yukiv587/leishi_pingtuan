@@ -1,0 +1,29 @@
+<!--pages/activity/bonus-reward.wxml-->
+
+<view class='page'>
+  <view class='main'>
+    <view class='list-item'>
+      <view>拼团总充值金额满5万元</view>
+      <text>拼团发起人可获得雷氏普爱20周年神秘大礼一份</text>
+    </view>
+    <view class='list-item'>
+      <view>拼团总充值金额满10万元</view>
+      <text>·拼团发起人可获得惊喜礼品一份</text>
+      <text>·参团成员可获得雷氏普爱20周年神秘大礼一份</text>
+    </view>
+    <view class='list-item'>
+      <view>拼团总充值金额满20万元</view>
+      <text>参与人根据本团充值金额排名，前10名尊享团长福利，可获得惊喜礼品一份</text>
+    </view>
+    <view class='list-item'>
+      <view>同一团内参团成员充值满12000元</view>
+      <text>可获得6800元小儿推拿学习创富落地班</text>
+    </view>
+  </view>
+
+ <view class="img-box">
+    <image mode="widthFix" src="/image/bonus-reward.png"></image>
+  </view>
+
+  <button class='goback-btn' bindtap='goback'>返回</button>
+</view>

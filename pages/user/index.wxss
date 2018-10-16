@@ -1,0 +1,94 @@
+/**index.wxss**/
+
+page {
+  background-color: #f5f5f5;
+}
+
+.userinfo {
+  height: 264rpx;
+  background-color: #45ad79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navigator-text {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 40rpx;
+  font-size: 36rpx;
+}
+
+.userinfo-avatar {
+  width: 144rpx;
+  height: 144rpx;
+  border: 4rpx solid #fff;
+  border-radius: 50%;
+}
+
+.userinfo .navigator-text {
+  padding-left: 60rpx;
+}
+
+.userinfo-nickname {
+  padding-left: 40rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.userinfo .navigator-arrow {
+  right: 28rpx;
+}
+
+.userinfo .navigator-arrow:after {
+  height: 36rpx;
+  width: 36rpx;
+  border-color: #fff;
+}
+
+.info {
+  background-color: #fff;
+  height: 120rpx;
+  position: relative;
+}
+
+.info .navigator-text {
+  justify-content: space-between;
+  padding-right: 40rpx;
+  color: #4d4d4d;
+}
+
+.info::after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 40rpx;
+  right: 0;
+  border-top: 1px solid #e0e0e0;
+  color: #e0e0e0;
+}
+
+.info:nth-child(2)::after {
+  border-top: none;
+}
+
+.getUserInfoBtn {
+  font-size: 36rpx;
+  width: 60%;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 12rpx 10rpx;
+  border-radius: 50rpx;
+}

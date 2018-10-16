@@ -1,0 +1,90 @@
+/* pages/activity/create.wxss */
+
+.list-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 88rpx;
+  font-size: 32rpx;
+  color: #4d4d4d;
+}
+
+.list-item  input {
+  flex: 1;
+  text-align: right;
+  padding: 0 20rpx;
+}
+
+.list-item::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.item-title {
+  padding-left: 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.info-item-box {
+  margin-bottom: 20rpx;
+  border-top: 1px solid #e8e8e8;
+}
+
+.group-title {
+  margin-bottom: 20rpx;
+}
+
+.group-notice {
+  display: block;
+  /* height: 260rpx; */
+  height: auto;
+  padding: 0 30rpx;
+}
+
+.group-notice  .item-title {
+  padding-left: 0;
+}
+
+.group-notice  textarea {
+  text-align: left;
+  font-size: 32rpx;
+  width: 100%;
+  height: 150rpx;
+}
+
+.btn-area {
+  margin-top: 160rpx;
+  padding: 0 20rpx;
+}
+
+.btn-area button {
+  background-color: #45ad79;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+picker {
+  flex: 1;
+  text-align: right;
+}
+picker .navigator-arrow {
+  padding-left: 20rpx;
+}
+
+.color-grey {
+  color: #999;
+}
+
+.tips {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #ff6565;
+  padding-left: 30rpx;
+}

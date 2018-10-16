@@ -1,0 +1,68 @@
+/* pages/activity/pay-success.wxss */
+
+.page {
+  text-align: center;
+  font-size: 32rpx;
+  color: #4d4d4d;
+}
+
+.header {
+  background-color: #45ad79;
+  color: #fff;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.goback-btn {
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #45ad79;
+  margin-top: 20rpx;
+  width: 80%;
+}
+
+.img-box1 image {
+  width: 200rpx;
+}
+
+.img-box2 image {
+  width: 160rpx;
+}
+
+.btn-box {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.info {
+  margin-bottom: 20rpx;
+}
+
+.info text {
+  color: #45ad79;
+  font-size: 32rpx;
+}
+
+.info view {
+  line-height: 50rpx;
+}
+
+.info2 {
+  color: #45ad79;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.info3>text {
+  font-size: 36rpx;
+  color: #4d4d4d;
+}
+
+.page view {
+  padding: 10rpx 0;
+}
+
+view text {
+  color: #45ad79;
+}

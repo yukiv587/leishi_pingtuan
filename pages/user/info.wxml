@@ -1,0 +1,50 @@
+<!--pages/user/info.wxml-->
+
+<view class='info-page'>
+  <view class='info-avatar'>
+    <image mode="widthFix" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="info-item-box">
+
+      <view class="info-item">
+        <view class="item-title">昵称</view>
+        <input disabled="true" value='{{userInfo.nickName}}' />
+      </view>
+
+      <view class="info-item">
+        <view class="item-title">真实姓名</view>
+        <input type="text" name="realname" value='{{userInfo2.realname}}' placeholder=''/>
+        <text class='required-tip'>(必填)</text>
+      </view>
+
+       <view class="info-item">
+        <view class="item-title">性别</view>
+        <input disabled="true" value='{{gender[userInfo.gender]}}' />
+      </view>
+
+      <view class="info-item">
+        <view class="item-title">手机号</view>
+        <input name="mobile" type="number" value='{{userInfo2.mobile}}' />
+        <text class='required-tip'>(必填)</text>
+      </view>
+
+      <view class="info-item">
+        <view class="item-title">市场经理</view>
+        <input name="manager" value='{{userInfo2.manager}}' />
+        <text class='required-tip'>(必填)</text>
+      </view> 
+    </view>
+
+    <view class='service-tel'>客服电话：
+      <text>400-6866-399</text>
+    </view>
+    <view class='remark'>备注：如您不确定客户经理姓名，可以拨打客服电话查询</view>
+
+    <view class="btn-area">
+      <button formType="submit">保存</button>
+    </view>
+  </form>
+
+</view>

@@ -1,0 +1,51 @@
+<!--pages/activity/pay-success.wxml-->
+<view class='page'>
+  <view class='header'>充值成功</view>
+  <view class='img-box1'>
+    <image mode="widthFix" src='/image/memexia.png'></image>
+  </view>
+  <view class='info'>
+    <text>团编号：{{order.groupsn}}</text>
+    <view>充值金额：{{order.amount}}元</view>
+  </view>
+
+<view wx:if="{{currLevel}}">
+  <view class='info2'>
+    <text>恭喜您</text>
+    <view>达成单人充值目标{{currLevel.sum_str}}元活动</view>
+  </view>
+
+  <view class='info3'>
+    <text>您将获得</text>
+    <view class='flex'>
+      <text>加盟商：</text>
+      <view>
+        <view wx:for="{{currLevel.jm}}">{{item}}</view>
+      </view>
+    </view>
+    <view class='flex'>
+      <text>经销商：</text>
+      <view>
+        <view wx:for="{{currLevel.jx}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='img-box2'>
+    <image mode="widthFix" src='/image/gift.png'></image>
+  </view>
+</view>
+
+
+  <view class='next-target'>
+    <view>您距离下一个目标</view>
+    <view>还差
+      <text>{{next}}</text>元</view>
+  </view>
+
+
+  <view class='btn-box'>
+    <button class='goback-btn' bindtap='gobackHome'>返回首页</button>
+  </view>
+
+</view>

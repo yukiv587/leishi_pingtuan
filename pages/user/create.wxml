@@ -1,0 +1,27 @@
+<!--pages/user/create.wxml-->
+
+<view class='page'>
+
+  <view class="activity-list">
+    <view class='list-item' wx:for="{{userGroupInfo.mygroups}}" wx:key="unique">
+      <view class='item-top'>
+        <view class='activity-title'>
+          <image mode='widthFix' src='{{item.createdby.avatarurl}}'></image>
+          <text>{{item.title}}</text>
+        </view>
+        <navigator class='join-btn' url='/pages/activity/detail?id={{item.sn}}'>进入</navigator>
+      </view>
+      <view class='item-bottom'>
+        <view class='member'>团员：{{item.joincount}}
+          <text>/{{item.limit}}</text>人</view>
+        <view class='target' wx:if='{{item.current_milestone.title}}'>达成目标：{{item.current_milestone.title}}</view>
+        <view class='target' wx:else>达成目标：无</view>
+      </view>
+    </view>
+
+    <view class="empty" wx:if="{{userGroupInfo.mygroups.length == 0}}">
+      <text>暂无数据</text>
+    </view>
+
+  </view>
+</view>

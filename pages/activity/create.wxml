@@ -1,0 +1,43 @@
+<!--pages/activity/create.wxml-->
+
+<view class='create-page'>
+  <form bindsubmit="formSubmit">
+
+    <view class='list-item group-title'>
+      <text class="item-title">拼团标题：</text>
+      <input name="title" placeholder="不超过10个字" maxlength="10" />
+    </view>
+
+    <view class="info-item-box">
+      <view class="list-item">
+        <view class="item-title color-grey">截止日期：</view>
+        <input class="color-grey" disabled="true" value='2018年07月16日' />
+      </view>
+
+      <view class="list-item">
+        <view class="item-title">限制人数：</view>
+        <picker mode='selector' value="{{peopleNum}}" range="{{peopleNumArray}}" bindchange="bindPeopleChange">
+          <view class="picker">
+            {{peopleNumArray[peopleNum]}}人
+            <text class='navigator-arrow'></text>
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="list-item group-notice">
+      <view class="item-title">公告内容：</view>
+      <view>
+        <textarea maxlength="30" name="content" placeholder="请输入内容（不超过30个字）" />
+      </view>
+    </view>
+
+    <view class='tips'>
+      <text>注：创建成功但未充值的团不会被公开</text>
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit">充值并建团</button>
+    </view>
+  </form>
+</view>

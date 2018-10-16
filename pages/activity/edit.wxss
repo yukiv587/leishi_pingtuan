@@ -1,0 +1,25 @@
+/* pages/activity/edit.wxss */
+
+.edit-box {
+  color: #4d4d4d;
+  background-color: #fff;
+  font-size: 32rpx;
+  padding: 30rpx;
+}
+
+.edit-box text{
+  display: block;
+  margin-bottom: 30rpx;
+}
+
+.edit-box textarea {
+  height: 200rpx;
+  color: #6e6e6e;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #45ad79;
+  font-size: 36rpx;
+  margin: 200rpx 20rpx 100rpx;
+}

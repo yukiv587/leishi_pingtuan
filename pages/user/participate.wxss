@@ -1,0 +1,64 @@
+/* pages/user/participate .wxss */
+
+.activity-list {
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+  box-sizing: border-box;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin: 15rpx 20rpx 5rpx;
+  padding: 20rpx;
+  box-shadow: 2px 2px 3px #e7e7e7;
+}
+
+.item-top, .item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 36rpx;
+  color: #4d4d4d;
+}
+
+.activity-title {
+  display: flex;
+  align-items: center;
+}
+
+.activity-title image {
+  width: 64rpx;
+  height: 64prx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  flex-shrink: 0;
+}
+
+.activity-title text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.member text {
+  color: #999;
+}
+
+.join-btn {
+  font-size: 35rpx;
+  padding: 0 40rpx;
+  line-height: 72rpx;
+  color: #fff;
+  background-color: #f6cd69;
+  border-radius: 50rpx;
+  border-color: #f6cd69;
+  margin: 0;
+  flex-shrink: 0;
+}
+

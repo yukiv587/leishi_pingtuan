@@ -1,0 +1,16 @@
+<!--pages/activity/target-reward.wxml-->
+
+<view class='page'>
+  <view class='main'>
+
+    <view class='list-item' wx:for="{{milestones}}" wx:key="{{index}}">
+      <view>目标{{chineseIndex[index]}}：{{item.title}}</view>
+      <text>{{item.description}}</text>
+    </view>
+  </view>
+  
+  <view class="img-box">
+    <image mode="widthFix" src="/image/target-reward.png"></image>
+  </view>
+  <button class='goback-btn' bindtap='goback'>返回</button>
+</view>

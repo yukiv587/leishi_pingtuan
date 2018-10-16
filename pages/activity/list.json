@@ -1,0 +1,6 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "拼团列表",
+  "navigationBarTextStyle": "#fff",
+  "enablePullDownRefresh": true
+}

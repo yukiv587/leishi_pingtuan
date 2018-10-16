@@ -1,0 +1,79 @@
+<!--pages/activity/list.wxml-->
+
+<view class='page'>
+
+  <view class='search-box'>
+    <view class="order-btn" bindtap='toggleOrderList'>综合排序
+      <text class='bottom-arrow'></text>
+    </view>
+    <form bindsubmit="keywordSearch">
+      <view class='search-input-box'>
+        <input name="keywords" placeholder="搜索团名或者编号" />
+        <view class='search-btn'>
+          <button formType="submit">
+            <icon type="search" size="14" />
+          </button>
+        </view>
+      </view>
+    </form>
+  </view>
+
+  <view class="activity-list">
+    <!-- <scroll-view class="list-row" scroll-y="true" style="height: {{scrollHeight}}px;" bindscrolltolower="delatyload" bindscrolltoupper="refesh">
+
+    </scroll-view> -->
+
+
+    <scroll-view class="list-row" scroll-y="{{isScroll}}" style="height: 100%;">
+      <view class="empty" wx:if="{{groupList.length == 0}}">
+        <text>暂无数据</text>
+      </view>
+      <view class='list-item' wx:for="{{groupList}}" wx:key="unique">
+        <view class='item-top'>
+          <view class='activity-title'>
+            <image mode='widthFix' src='{{item.createdby.avatarurl}}'></image>
+            <text>{{item.title}}</text>
+          </view>
+          <navigator class='join-btn' url='/pages/activity/detail?id={{item.sn}}'>进入</navigator>
+        </view>
+        <view class='item-bottom'>
+          <view class='member'>团员：{{item.joincount}}
+            <text>/{{item.limit}}</text>人</view>
+          <view class='target' wx:if='{{item.current_milestone.title}}'>达成目标：{{item.current_milestone.title}}</view>
+          <view class='target' wx:else>达成目标：无</view>
+        </view>
+      </view>
+    </scroll-view>
+
+  </view>
+
+  <view class='btn-area-bottom'>
+     <navigator url="/pages/activity/create">我要建团</navigator>  
+     <!-- <view bindtap='activeFishied'>我要建团</view>  -->
+  </view>
+
+  <view class="order-list-box" hidden="{{orderList}}" bindtap='toggleOrderList'>
+    <view class='mark'></view>
+    <radio-group class="order-list" bindchange="radioChange">
+      <label class="radio">
+        <radio value="" />默认综合排序
+      </label>
+      <label class="radio">
+        <radio value="joincount" />按组团人数排序
+      </label>
+      <label class="radio">
+        <radio value="totalamount" />按充值金额排序
+      </label>
+      <label class="radio">
+        <radio value="sn" />按组团编号排序
+      </label>
+    </radio-group>
+  </view>
+
+   <!-- <view class="loading-box" wx:if="{{loading}}">
+    <image class="loading-img" src="../images/loading.gif"></image>
+  </view>
+  <view class="loading-box hide" wx:else>
+    <image class="loading-img" src="../images/loading.gif"></image>
+  </view>  -->
+</view>

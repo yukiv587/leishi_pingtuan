@@ -1,0 +1,13 @@
+<!--pages/activity/edit.wxml-->
+
+<view class='page'>
+
+  <form bindsubmit="edit">
+    <view class='edit-box'>
+      <text>公告内容：</text>
+      <textarea placeholder="请输入内容（不超过30个字）" name="content" maxlength="30" value="{{content}}" />
+    </view>
+
+    <button class="submit-btn" form-type="submit"> 保存并修改 </button>
+  </form>
+</view>

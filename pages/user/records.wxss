@@ -1,0 +1,33 @@
+/* pages/user/records.wxss */
+
+.main {
+  padding: 20rpx;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx 20rpx 30rpx;
+  box-shadow: 2px 2px 3px #e7e7e7;
+  font-size: 36rpx;
+}
+
+.top, .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   padding: 30rpx 0;
+}
+
+.top{
+  border-bottom: 1px solid #e7e7e7
+}
+
+.col-red {
+  color: #ff6565;
+}

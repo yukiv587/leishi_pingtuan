@@ -1,0 +1,46 @@
+/* pages/activity/target-reward.wxss */
+
+.page {
+  padding: 20rpx;
+}
+
+.main {
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  display: none;
+}
+
+.img-box {
+  width: 100%;
+}
+
+.img-box image {
+  width: 100%;
+  height: auto;
+}
+
+.list-item {
+  text-align: center;
+  margin-bottom: 40rpx;
+  padding: 0 30rpx;
+}
+
+.list-item view {
+  font-size: 36rpx;
+  color: #ff6565;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+}
+
+.list-item text {
+  font-size: 32rpx;
+  color: #4d4d4d;
+}
+
+.goback-btn {
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #45ad79;
+  margin-top: 20rpx;
+}
